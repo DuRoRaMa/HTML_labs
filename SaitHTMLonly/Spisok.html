@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+    <title>Самые продаваемые игры</title>
+  </head>
+  <body>
+        Menu:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Main.html">Самые продаваемые игры</a><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h3><a href="Spisok.html">Список самых продаваемых игр</a></h3>
+        <hr>
+            <details>
+                <summary> График </summary>
+                <form>
+                    <p> <b>Значение по оси ОX&nbsp;&nbsp;&nbsp;&nbsp;Результат</b><br>
+                    <input type="radio" name="tyoe" value="gan">Жанр&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="cell">Количество продаж<br>
+                    <input type="radio" name="tyoe" value="year">Год релиза&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="maxcell">Максимальное количество продаж<br>
+                    <input type="radio" name="tyoe" value="country">Издатель&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="mincell">Минимальное количество продаж<br><br>
+                    <input type="button" value="Построить">
+                </form>
+            </details>
+            <details>
+                <summary> Фильтр </summary>
+                <p>Название:  <input type="text"><br><br>
+                   Жанр:   <input type="text"><br><br>
+                   Издатель:   <input type="text"><br><br>
+                   Разработчик:   <input type="text"><br><br>
+                   Дата релиза:   От: <input type="number" min="1960" max="2030">  До: <input type="number" min="1960" max="2030"><br><br>
+                   Количество проданных копий:  От: <input type="number" min="0">  До: <input type="number" min="0"><br><br>
+                   <input type="button" value="Найти">
+            </details>
+            <details>
+                <summary> Сортировка </summary>
+                <p>Первый уровень, Сортировать? 
+                        <select>
+                            <option value="0">Нет</option>
+							<option value="1">Название</option>
+							<option value="2">Жанр</option>
+							<option value="3">Издатель</option>
+							<option value="4">Разработчик</option>
+							<option value="5">Год релиза</option>
+							<option value="6">Количество проданных копий</option>
+                        </select>
+                        По убыванию? <input type="checkbox"><br><br>
+                        Второй уровень, Сортировать? 
+                        <select>
+                            <option value="0">Нет</option>
+							<option value="1">Название</option>
+							<option value="2">Жанр</option>
+							<option value="3">Издатель</option>
+							<option value="4">Разработчик</option>
+							<option value="5">Год релиза</option>
+							<option value="6">Количество проданных копий</option>
+                        </select>
+                        По убыванию? <input type="checkbox"><br><br>
+                        Третий уровень, Сортировать? 
+                        <select>
+                            <option value="0">Нет</option>
+							<option value="1">Название</option>
+							<option value="2">Жанр</option>
+							<option value="3">Издатель</option>
+							<option value="4">Разработчик</option>
+							<option value="5">Год релиза</option>
+							<option value="6">Количество проданных копий</option>
+                        </select>
+                        По убыванию? <input type="checkbox"><br><br>
+                        <input type="button" value="Сортировать">
+            </details>
+        <hr>
+       
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>Название</th> 
+                <th>Жанр</th>
+                <th>Издатель</th>
+                <th>Разработчик</th>
+                <th>Год релиза</th>
+                <th>Количество проданных копий</th>
+            </tr>
+            <tr>
+                <td>Dota2</td>
+                <td>Moba</td>
+                <td>Valve</td>
+                <td>Valve</td>
+                <td>2013</td>
+                <td>5000000</td>
+            </tr>
+            <tr>
+                <td>Pubg</td>
+                <td>action</td>
+                <td>Krafton</td>
+                <td>PlayerUnknown’s </td>
+                <td>2018</td>
+                <td>7000000</td>
+            </tr>
+            <tr>
+                <td>The witcher</td>
+                <td>RPG</td>
+                <td>CD project red</td>
+                <td>CD project red</td>
+                <td>2007</td>
+                <td>10000000</td>
+            </tr>
+            <tr>
+                <td>The witcher 2</td>
+                <td>RPG</td>
+                <td>CD project red</td>
+                <td>CD project red</td>
+                <td>2012</td>
+                <td>12000000</td>
+            </tr>
+            <tr>
+                <td>The witcher 3</td>
+                <td>RPG</td>
+                <td>CD project red</td>
+                <td>CD project red</td>
+                <td>2015</td>
+                <td>35000000</td>
+            </tr><tr>
+                <td>Doom</td>
+                <td>FPS</td>
+                <td>Betchesda</td>
+                <td>ID software</td>
+                <td>2016</td>
+                <td>1300000</td>
+            </tr><tr>
+                <td>Elden Ring</td>
+                <td>Souls'like</td>
+                <td>BondaiNamko</td>
+                <td>FromSoftware</td>
+                <td>2022</td>
+                <td>25000000</td>
+            <tr>
+            <td>Grand Theft Auto V</td>
+            <td>Action-Adventure</td>
+            <td>Rockstar Games</td>
+            <td>Rockstar North</td>
+            <td>2013</td>
+            <td>185000000</td>
+        </tr>
+        <tr>
+            <td>Minecraft</td>
+            <td>Sandbox</td>
+            <td>Mojang</td>
+            <td>Mojang</td>
+            <td>2011</td>
+            <td>240000000</td>
+        </tr>
+        <tr>
+            <td>The Legend of Zelda: Breath of the Wild</td>
+            <td>Action-Adventure</td>
+            <td>Nintendo</td>
+            <td>Nintendo</td>
+            <td>2017</td>
+            <td>32000000</td>
+        </tr>
+        <tr>
+            <td>Red Dead Redemption 2</td>
+            <td>Action-Adventure</td>
+            <td>Rockstar Games</td>
+            <td>Rockstar Studios</td>
+            <td>2018</td>
+            <td>55000000</td>
+        </tr>
+        <tr>
+            <td>Super Mario Odyssey</td>
+            <td>Platformer</td>
+            <td>Nintendo</td>
+            <td>Nintendo</td>
+            <td>2017</td>
+            <td>25000000</td>
+        </tr>
+        <tr>
+            <td>Cyberpunk 2077</td>
+            <td>RPG</td>
+            <td>CD Projekt</td>
+            <td>CD Projekt Red</td>
+            <td>2020</td>
+            <td>25000000</td>
+        </tr>
+        <tr>
+            <td>Call of Duty: Modern Warfare</td>
+            <td>FPS</td>
+            <td>Activision</td>
+            <td>Infinity Ward</td>
+            <td>2019</td>
+            <td>30000000</td>
+        </tr>
+        <tr>
+            <td>FIFA 21</td>
+            <td>Sports</td>
+            <td>EA Sports</td>
+            <td>EA Vancouver</td>
+            <td>2020</td>
+            <td>31000000</td>
+        </tr>
+        <tr>
+            <td>Animal Crossing: New Horizons</td>
+            <td>Life Simulation</td>
+            <td>Nintendo</td>
+            <td>Nintendo</td>
+            <td>2020</td>
+            <td>42000000</td>
+        </tr>
+        <tr>
+            <td>Fortnite</td>
+            <td>Battle Royale</td>
+            <td>Epic Games</td>
+            <td>Epic Games</td>
+            <td>2017</td>
+            <td>350000000</td>
+        </tr>
+        <tr>
+            <td>The Elder Scrolls V: Skyrim</td>
+            <td>RPG</td>
+            <td>Bethesda</td>
+            <td>Bethesda Game Studios</td>
+            <td>2011</td>
+            <td>30000000</td>
+        </tr>
+        <tr>
+            <td>Halo 5: Guardians</td>
+            <td>FPS</td>
+            <td>Microsoft Studios</td>
+            <td>343 Industries</td>
+            <td>2015</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>League of Legends</td>
+            <td>MOBA</td>
+            <td>Riot Games</td>
+            <td>Riot Games</td>
+            <td>2009</td>
+            <td>115000000</td>
+        </tr>
+        <tr>
+            <td>World of Warcraft</td>
+            <td>MMORPG</td>
+            <td>Blizzard Entertainment</td>
+            <td>Blizzard Entertainment</td>
+            <td>2004</td>
+            <td>120000000</td>
+        </tr>
+        <tr>
+            <td>The Sims 4</td>
+            <td>Life Simulation</td>
+            <td>Electronic Arts</td>
+            <td>Maxis</td>
+            <td>2014</td>
+            <td>40000000</td>
+        </tr>
+        <tr>
+            <td>Overwatch</td>
+            <td>FPS</td>
+            <td>Blizzard Entertainment</td>
+            <td>Blizzard Entertainment</td>
+            <td>2016</td>
+            <td>50000000</td>
+        </tr>
+        <tr>
+            <td>Valorant</td>
+            <td>FPS</td>
+            <td>Riot Games</td>
+            <td>Riot Games</td>
+            <td>2020</td>
+            <td>14000000</td>
+        </tr>
+        <tr>
+            <td>Pokémon Sword and Shield</td>
+            <td>RPG</td>
+            <td>Nintendo</td>
+            <td>Game Freak</td>
+            <td>2019</td>
+            <td>26000000</td>
+        </tr>
+        <tr>
+            <td>Horizon Zero Dawn</td>
+            <td>Action RPG</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Guerrilla Games</td>
+            <td>2017</td>
+            <td>20000000</td>
+        </tr>
+        <tr>
+            <td>Ghost of Tsushima</td>
+            <td>Action-Adventure</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Sucker Punch Productions</td>
+            <td>2020</td>
+            <td>9000000</td>
+        </tr>
+        <tr>
+            <td>Doom Eternal</td>
+            <td>FPS</td>
+            <td>Bethesda</td>
+            <td>id Software</td>
+            <td>2020</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>The Last of Us Part II</td>
+            <td>Action-Adventure</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Naughty Dog</td>
+            <td>2020</td>
+            <td>10000000</td>
+        </tr>
+            <tr>
+            <td>The Last of Us</td>
+            <td>Action-Adventure</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Naughty Dog</td>
+            <td>2013</td>
+            <td>17000000</td>
+        </tr>
+        <tr>
+            <td>Assassin's Creed Valhalla</td>
+            <td>Action RPG</td>
+            <td>Ubisoft</td>
+            <td>Ubisoft Montreal</td>
+            <td>2020</td>
+            <td>20000000</td>
+        </tr>
+        <tr>
+            <td>Star Wars Jedi: Fallen Order</td>
+            <td>Action-Adventure</td>
+            <td>Electronic Arts</td>
+            <td>Respawn Entertainment</td>
+            <td>2019</td>
+            <td>10000000</td>
+        </tr>
+        <tr>
+            <td>Persona 5</td>
+            <td>RPG</td>
+            <td>Atlus</td>
+            <td>P-Studio</td>
+            <td>2016</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>Far Cry 5</td>
+            <td>FPS</td>
+            <td>Ubisoft</td>
+            <td>Ubisoft Montreal</td>
+            <td>2018</td>
+            <td>25000000</td>
+        </tr>
+        <tr>
+            <td>The Division 2</td>
+            <td>Action RPG</td>
+            <td>Ubisoft</td>
+            <td>Ubisoft Massive</td>
+            <td>2019</td>
+            <td>10000000</td>
+        </tr>
+        <tr>
+            <td>Control</td>
+            <td>Action-Adventure</td>
+            <td>505 Games</td>
+            <td>Remedy Entertainment</td>
+            <td>2019</td>
+            <td>2000000</td>
+        </tr>
+        <tr>
+            <td>Death Stranding</td>
+            <td>Action</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Kojima Productions</td>
+            <td>2019</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>Cyberpunk 2077</td>
+            <td>RPG</td>
+            <td>CD Projekt</td>
+            <td>CD Projekt Red</td>
+            <td>2020</td>
+            <td>25000000</td>
+        </tr>
+        <tr>
+            <td>Resident Evil Village</td>
+            <td>Horror</td>
+            <td>Capcom</td>
+            <td>Capcom</td>
+            <td>2021</td>
+            <td>8000000</td>
+        </tr>
+        <tr>
+            <td>Genshin Impact</td>
+            <td>Action RPG</td>
+            <td>miHoYo</td>
+            <td>miHoYo</td>
+            <td>2020</td>
+            <td>70000000</td>
+        </tr>
+        <tr>
+            <td>Apex Legends</td>
+            <td>Battle Royale</td>
+            <td>Electronic Arts</td>
+            <td>Respawn Entertainment</td>
+            <td>2019</td>
+            <td>100000000</td>
+        </tr>
+        <tr>
+            <td>Rocket League</td>
+            <td>Sports</td>
+            <td>Psyonix</td>
+            <td>Psyonix</td>
+            <td>2015</td>
+            <td>60000000</td>
+        </tr>
+        <tr>
+            <td>Monster Hunter: World</td>
+            <td>Action RPG</td>
+            <td>Capcom</td>
+            <td>Capcom</td>
+            <td>2018</td>
+            <td>23000000</td>
+        </tr>
+        <tr>
+            <td>God of War</td>
+            <td>Action-Adventure</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>SIE Santa Monica Studio</td>
+            <td>2018</td>
+            <td>23000000</td>
+        </tr>
+        <tr>
+            <td>Among Us</td>
+            <td>Party</td>
+            <td>Innersloth</td>
+            <td>Innersloth</td>
+            <td>2018</td>
+            <td>500000000</td>
+        </tr>
+        <tr>
+            <td>The Outer Worlds</td>
+            <td>RPG</td>
+            <td>Private Division</td>
+            <td>Obsidian Entertainment</td>
+            <td>2019</td>
+            <td>4000000</td>
+        </tr>
+        <tr>
+            <td>Final Fantasy VII Remake</td>
+            <td>RPG</td>
+            <td>Square Enix</td>
+            <td>Square Enix</td>
+            <td>2020</td>
+            <td>5000000</td>
+        </tr>
+        <tr>
+            <td>Sekiro: Shadows Die Twice</td>
+            <td>Action-Adventure</td>
+            <td>Activision</td>
+            <td>FromSoftware</td>
+            <td>2019</td>
+            <td>8000000</td>
+        </tr>
+        <tr>
+            <td>Hades</td>
+            <td>Roguelike</td>
+            <td>Supergiant Games</td>
+            <td>Supergiant Games</td>
+            <td>2020</td>
+            <td>1000000</td>
+        </tr>
+        <tr>
+            <td>Nier: Automata</td>
+            <td>Action RPG</td>
+            <td>Square Enix</td>
+            <td>PlatinumGames</td>
+            <td>2017</td>
+            <td>7000000</td>
+        </tr>
+        <tr>
+            <td>Demon's Souls</td>
+            <td>Action RPG</td>
+            <td>Sony Interactive Entertainment</td>
+            <td>Bluepoint Games</td>
+            <td>2020</td>
+            <td>1500000</td>
+        </tr>
+        <tr>
+            <td>Ghostrunner</td>
+            <td>Action</td>
+            <td>505 Games</td>
+            <td>One More Level</td>
+            <td>2020</td>
+            <td>600000</td>
+        </tr>
+        </table>
+        <hr>
+  </body>
+</html>
