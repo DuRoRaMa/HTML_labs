@@ -1,0 +1,57 @@
+<html>
+    <head></head>
+    <body>
+        <div class="menu">
+            <div class="smth"><h2>Продаваемые игры</h2></div>
+            <div class="another">Продаваемые</div>
+            <div class="another">Не востребованные</div>
+            <div class="another">Не популярные</div>
+            <div class="another">Популярные</div>
+        </div>
+        <div class="img-conteiner">
+            <div class="img"><img src="https://avatars.mds.yandex.net/i?id=92a11a47b118def4151e7e856eb4c6ad447ed78b-10143023-images-thumbs&n=13" class="img-img"></div>
+            <div class="img2">
+            <div class="img1"><img src="https://avatars.mds.yandex.net/i?id=7756b004953add950ef989caaf9f7b61e633e33d-4599655-images-thumbs&n=13" class="img-img"></div>
+            <div class="img1"><img src="https://avatars.mds.yandex.net/i?id=04681a40a117fe693f96aca42bc12989bff47cf9-5869826-images-thumbs&n=13" class="img-img"></div>
+            </div>
+        </div>
+        <div class="text-img-container">
+            <div class="text-img-box">
+                <img class="round-img" src="https://avatars.mds.yandex.net/i?id=59fb12c5105374689905815b44c4b2f87f57f6bc-5302151-images-thumbs&n=13" alt="">
+                <div class="text-round-img">Minecraft</div>
+            </div>
+            <div class="text-img-box"><img class="round-img" src="https://avatars.mds.yandex.net/i?id=d39595112b3f1bb45e3b3e6caf872c1aa7bf3693784ac735-5679437-images-thumbs&n=13" alt="">
+            <div class="text-round-img">Tetris</div>
+            </div>
+            <div class="text-img-box"><img class="round-img" src="https://avatars.mds.yandex.net/i?id=11d1f45eb247ada0533ea8554477a2dc8074920a974fff25-12577662-images-thumbs&n=13" alt="">
+            <div class="text-round-img">WII sport</div>
+            </div>
+            <div class="text-img-box">
+                <img class="round-img" src="https://avatars.mds.yandex.net/i?id=85bdc70653bcca9f2a4c6fe41c8f21237b90cc3f-7012130-images-thumbs&n=13">
+                <div class="text-round-img">Grand Theft Auto V</div>
+                </div>
+            
+        </div>
+        <div class="big-text-container">
+            <div class="big-text">
+                <h2>DOTA 2, издатель - Valve, разработчик - Valve</h2>
+                Продано - множество копий так как игра бесплатна
+Многопользовательская командная pc игра в жанре MOBA, разработанная и изданная корпорацией Valve. Игра = числовое продолжение DotA, изображает сражение на карте особого вида;в каждом матче участвуют две команды по пять игроков, управляющих разными героями - персонажами с различными наборами способностей и характеристиками. Для победы в матче команда должна уничтожить особый объект - «крепость», вражеской стороны, и защитить от уничтожения собственную «крепость».
+            </div>
+            <img class="big-img" src="https://avatars.mds.yandex.net/i?id=6f5a5086a7d2ebc86b214c7062c01e9f463986e2-7755287-images-thumbs&n=13" alt="">
+        </div>
+        <div class="big-text-container ">
+            <div class="big-text"><h2>Nier: Automata, Издатель - Square Enix, разработчик - Platinum Games</h2>
+Продажи - 7 млн. копий Nier: Automata — компьютерная игра в жанре Action/RPG с открытым миром, разработанная японской студией Platinum Games и выпущенная компанией Square Enix для Microsoft Windows и PlayStation 4 в 2017 году. В последующие годы игра была портирована на Xbox One и Nintendo Switch. Действие Automata происходит в том же постапокалиптическом мире, что и в Nier (2010), но тысячи лет спустя, на фоне прокси-войны между человечеством и инопланетными захватчиками, в которой с обеих сторон сражаются роботы. Герои игры, девушка-воин 2B, её спутник 9S и беглый прототип A2, — неотличимые от людей андроиды; им противостоят «машины» разных форм и р
+            </div>
+        </div>
+        <div class="footer">
+  <div class="footer-left">
+    © Виноградорв В.С., Б9122-09.03.04, 2024-2025
+  </div>
+  <div class="footer-right">
+    <span>✉ Контакты</span>
+  </div>
+    </div> 
+    </body>
+</html>
