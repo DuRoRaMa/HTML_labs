@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор равнобедренной трапеции</title>
+	<link rel="stylesheet" href="Css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+        
+            <div class="radio-group">
+                <p>Выберите тип входных данных:</p>
+                <div class="radio-option">
+                    <input type="radio" id="input-type-side" name="input-type" value="side" checked>
+                    <label for="input-type-side">Основания и боковая сторона</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="input-type-height" name="input-type" value="height">
+                    <label for="input-type-height">Основания и высота</label>
+                </div>
+                <button id="show-btn">Показать</button>
+            </div>
+            
+            <div class="figure-container">
+                <img id="figure-img" src="трапеция1.png" alt="Равнобедренная трапеция">
+            </div>
+            
+            <div class="input-group">
+                <label for="base-a">Основание AB:</label>
+                <input type="number" id="base-a" min="0" step="any">
+                <span id="error-base-a" class="error"></span>
+            </div>
+            
+            <div class="input-group">
+                <label for="base-b">Основание DC:</label>
+                <input type="number" id="base-b" min="0" step="any">
+                <span id="error-base-b" class="error"></span>
+            </div>
+            
+            <div class="input-group" id="side-c-group">
+                <label for="side-c">Боковая сторона AD:</label>
+                <input type="number" id="side-c" min="0" step="any">
+                <span id="error-side-c" class="error"></span>
+            </div>
+            
+            <div class="input-group hidden" id="height-group">
+                <label for="height">Высота Ah:</label>
+                <input type="number" id="height" min="0" step="any">
+                <span id="error-height" class="error"></span>
+            </div>
+        </div>
+        
+        <div class="output-section">
+            <h2>Вычисляемые характеристики</h2>
+            
+            <div class="checkbox-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="calc-height" checked>
+                    <label for="calc-height">Высота от основания к боковой стороне</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="calc-angles" checked>
+                    <label for="calc-angles">Углы</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="calc-diagonals" checked>
+                    <label for="calc-diagonals">Диагонали</label>
+                </div>
+            </div>
+            
+            <div>
+                <button id="calculate-btn">Вычислить</button>
+                <button id="clear-btn">Очистить</button>
+            </div>
+            
+            <div class="results" id="results">
+                <!-- Здесь будут отображаться результаты -->
+            </div>
+        </div>
+    </div>
+
+    <script src="realization.js"></script>
+</body>
+</html>
