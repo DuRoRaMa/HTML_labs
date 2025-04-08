@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фильтры и сортировка</title>
+    
+    
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: left;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f9f9f9;
+		}
+
+		tr:hover {
+			background-color: #f1f1f1;
+		}
+
+		caption {
+			font-weight: bold;
+			margin-bottom: 10px;
+			caption-side: bottom;
+			text-align: left;
+		}
+	</style>
+  </head>
+  <body>
+	
+	<form id="filter">
+	  <p>
+		<label for="structure">Название:</label>
+		<input type="text" id="structure">
+	  </p>
+	  <p>
+		<label for="category">Тип:</label>
+		<input type="text" id="category">
+	  </p>
+	  <p>
+		<label for="country">Страна:</label>
+		<input type="text" id="country">
+	  </p>
+	  <p>
+		<label for="city">Город:</label>
+		<input type="text" id="city">
+	  </p>
+	  <p>
+		<label for="yearFrom">Год: </label>
+		От <input type="number" id="yearFrom"> 
+		До <input type="number" id="yearTo">
+	  </p>
+	  <p>
+		<label for="heightFrom">Высота:</label>
+		от <input type="number" id="heightFrom"> 
+		до <input type="number" id="heightTo">
+	  </p>
+	  <input type="button" id="findBut" value="Найти" >
+	  <input type="button" id="clearBut" value="Очистить фильтры" > 
+	</form>
+	<form id="sort">
+    <p> Сортировать по</p>
+    <p>
+      <select id="fieldsFirst">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+    </p>
+    <p> 
+      <select id="fieldsSecond">
+      </select> 
+      по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+    </p>
+    <input type="button" id="Sort" value="Сортировать"> 
+    <input type="button" id="Reset" value="Сбросить сортировку">
+  </form>
+    <br>	
+    <table id="list">
+    </table>
+	<script src="data.js"></script>
+    <script src="main.js"></script>
+    <script src="table.js"></script>
+	<script src="filter.js"></script>
+	<script src="sort.js"></script>
+  </body>
+</html>
