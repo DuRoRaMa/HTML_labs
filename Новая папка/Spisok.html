@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+    <title>Самые продаваемые игры</title>
+  </head>
+  <body>
+        Menu:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Main.html">Самые продаваемые игры</a><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h3><a href="Spisok.html">Список самых продаваемых игр</a></h3>
+        <hr>
+            <details>
+                <summary> График </summary>
+                <form id="graph">
+                    <p> <b>Значение по оси ОX&nbsp;&nbsp;&nbsp;&nbsp;Результат</b><br>
+                    <input type="radio" name="tyoe" value="gan">Жанр&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="cell">Количество продаж<br>
+                    <input type="radio" name="tyoe" value="year">Год релиза&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="maxcell">Максимальное количество продаж<br>
+                    <input type="radio" name="tyoe" value="country">Издатель&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="tyoe" value="mincell">Минимальное количество продаж<br><br>
+                    <input type="button" value="Построить">
+                </form>
+            </details>
+            <details>
+                <summary> Фильтр </summary>
+                <form id="filter">
+                    <p>
+                    <label for="name">Название:</label> 
+                    <input type="text" id="name">
+                    </p>
+                    <p>
+                    <label for="genre"> Жанр:</label>
+                    <input type="text" id="genre">
+                    </p>
+                    <p>
+                    <label for="Publisher">  Издатель: </label>
+                    <input type="text" id="Publisher">
+                    </p>
+                    <p>
+                    <label for="developer"> Разработчик:</label>
+                    <input type="text" id="developer">
+                    </p>
+                    <p>
+                    <label for="yearFrom">Год выхода: </label>
+                        От <input type="number" id="yearFrom"> 
+                        До <input type="number" id="yearTo">
+                    </p>
+                    <p>
+                    <label for="SalesFrom"> Количество проданных копий: </label>
+                        От: <input type="number" id="SalesFrom" min="0" >  
+                        До: <input type="number" id="SalesTo" min="0" >
+                    </p>
+                    <input type="button" id="findBut" value="Найти" >
+                    <input type="button" id="ClearFilterBut" value="Очистить фильтры" >
+                </form>
+            </details>
+            <details>
+                <summary> Сортировка </summary>
+                <form id="sort">
+                    <p> Сортировать по</p>
+                    <p>
+                        <select id="fieldsFirst">
+                        </select> 
+                        по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+                    </p>
+                    <p> 
+                        <select id="fieldsSecond">
+                        </select> 
+                        по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+                    </p>
+                    <p> 
+                        <select id="fieldsThird">
+                        </select> 
+                        по убыванию? <input  type="checkbox"  id="fieldsThirdDesc">
+                    </p>
+                    <input type="button" id="Sort" value="Сортировать"> 
+                    <input type="button" id="Reset" value="Сбросить сортировку">
+                    </form>
+            </details>
+        <hr>
+       
+        <table border="1" cellspacing="0" id="idTable"></table>
+            
+        <hr>
+        <script src="javascript/main.js"></script>
+        <script src="javascript/filter.js"></script>
+        <script src="javascript/data.js"></script>
+        <script src="javascript/Table.js"></script>
+        <script src="javascript/sort.js"></script>
+  </body>
+</html>
