@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Трансформация и анимация</title>
+        <style>
+            #setting {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 20px;
+            }
+            #setting p {
+                margin: 0;
+                padding: 10px;
+            }
+            #setting input:invalid {
+                border: 2px solid red;
+            }
+        </style>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="javascript/image.js"></script>
+        <script src="javascript/main.js"></script>
+        <script src="javascript/path.js"></script>
+    </head>
+    <body>   
+        <input type="checkbox" id="IsCheck" style="display: none;">
+        
+        <form id="setting">
+            <p id="animationPathType" style="display: none;">
+                <b>Пути Перемещения</b><br>
+                <select id="PathSelect">
+                    <option value="0" selected>Пентаграмма</option>
+                </select>
+            </p>
+            <p id="Coordinate"><b>Координаты рисунка</b><br>
+              <label for="cx">x: </label>
+              <input type="number" id="cx"  value="1" min="0">
+              <span id="cx_finish" style="display: none;"> до <input type="number" id="cxToValue" value="1"  min="0"></span><br>
+              <label for="cy">y: </label>
+              <input type="number" id="cy"  value="1" min="0">
+              <span id="cy_finish" style="display: none;"> до <input type="number" id="cyToValue" value="1"  min="0"></span>
+            </p>
+            
+            <p id="mash"><b>Масштаб</b><br>
+                <label for="cxs">по x: </label>
+                <input type="number" id="cxs"  step="0.1" value="1"  min="0">
+                <span id="cxs_finish" style="display: none;"> до <input type="number" id="cxsToValue"  value="1" step="0.1"  min="0"></span><br>
+                <label for="cys">по y: </label>
+                <input type="number" id="cys"  step="0.1" value="1" min="0">
+                <span id="cys_finish" style="display: none;"> до <input type="number" id="cysToValue" value="1" step="0.1"  min="0"></span>
+            </p>
+            
+            <p id="rot"><b>Поворот</b><br>
+                <label for="rotate">угол: </label>
+                <input type="number" id="rotate"  value="1" min="0">
+                <span id="rotate_finish" style="display: none;"> до <input type="number" id="rotateToValue" value="1"  min="0"></span>
+            </p>
+            
+            <p><b>Скорость анимации (мс)</b><br>
+                от 500 до 5000<br>
+                <input type="number" id="speed" value="2000" min="500" max="5000">
+                <span id="speed_finish" style="display: none;"> до <input type="number" id="speedToValue" value="2000" min="500" max="5000"></span>
+            </p>
+        </form>
+        
+        <p>
+            <input type="button" id="IsDraw" value="Нарисовать">
+            <input type="button" id="IsDelete" value="Очистить"><br>
+            <label for="IsCheck" >
+                <input type="checkbox" id="IsCheckVisible">Включить анимацию?
+            </label>
+        </p>
+        
+        <div class="animation-controls" id="animationControls" style="display: none;">
+            <input type="checkbox" id="IsCheckPathVisible"> Перемещение вдоль пути?<br><br>
+            <select id="animationType">
+                <option value="linear" selected>linear</option>
+                <option value="ease">ease</option>
+                <option value="ease-in">ease-in</option>
+                <option value="ease-out">ease-out</option>
+                <option value="ease-in-out">ease-in-out</option>
+            </select>
+            <input type="button" id="animateBtn" value="Анимировать">
+        </div>
+        
+        <svg></svg>
+
+        
+    </body>
+</html>
