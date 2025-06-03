@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    svg#scatter, svg#histogram {
+      display: block;
+      width: 100%;
+      overflow: visible;
+    }
+  </style>
+</head>
+<body>   
+  <h3>Список самых высоких зданий</h3>
+  <div class="controls">
+    <div class="axis-settings">
+      <div class="axis">
+        <label>Ось OX:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="xAxis" value="Страна" checked> Страна</label>
+          <label><input type="radio" name="xAxis" value="Год"> Год</label>
+        </div>
+      </div>
+
+      <div class="axis">
+        <label>Ось OY:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="yAxis" value="max"> Максимальная высота</label>
+          <label><input type="checkbox" name="yAxis" value="min"> Минимальная высота</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-type">
+      <label>Тип графика:</label>
+      <select id="chartType">
+        <option value="scatter">Точечная</option>
+        <option value="histogram">Гистограмма</option>
+      </select>
+    </div>
+
+    <button id="buildChart">Построить</button>
+  </div>
+
+  <svg id="scatter"></svg>
+  <svg id="histogram"></svg>
+  <br><br><br><br><br><br><br><br>
+  <button id="toggleTable">Скрыть таблицу</button>
+  <div id="build"></div>
+
+  <script src="JavaScript/data.js"></script>
+  <script src="JavaScript/table.js"></script>
+  <script src="JavaScript/chart.js"></script>
+  <script src="JavaScript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+svg {
+    width: 800px;
+    height: 400px;
+}
+svg text {
+    font: 8px Verdana;
+}
+svg path, line {
+    fill: none;
+    stroke: #333333;
+    width: 1px;
+}
+.controls {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.axis-settings {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chart-type {
+  margin-bottom: 15px;
+}
+svg#scatter, svg#histogram {
+    display: block;
+    width: 50%;
+    overflow: visible; /* Убеждаемся, что содержимое не обрезается */
+}
