@@ -1,0 +1,84 @@
+/* Добавляем стили для графика и подписей */
+.chart-container {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container svg {
+  overflow: visible;
+}
+
+.axis-label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Увеличиваем контейнер для графика */
+.full-width-chart {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Улучшаем таблицу */
+.table-container {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f5f7fa;
+  font-weight: 600;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 2px solid #e1e4e8;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Пагинация */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  border: 1px solid #d1d5da;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #e9ecef;
+}
+
+.pagination button.active {
+  background-color: #0366d6;
+  color: white;
+  border-color: #0366d6;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

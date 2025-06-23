@@ -1,0 +1,52 @@
+.table {
+  border-collapse: collapse;
+  width:60%;
+  margin: 20px 0;
+  font-size: 0.9em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.table th {
+  border: 1px solid;
+}
+.table  td {
+  text-align: center;
+  border: 1px solid;
+}
+.hide {
+  /*visibility: hidden;*/
+  display: none;
+}
+.show{
+  visibility: visible;
+}
+.CoolSpan{
+  margin: 5px;
+}
+.CoolSpan:hover {
+  color:aqua;
+}
+.CoolSpan.active {
+  color:blue;
+  font-weight: bold;
+}
+svg {
+    width: 800px;
+    height: 400px;
+    overflow: visible;
+    width: 50%;
+}
+
+svg path, line {
+    fill: none;
+    stroke: black;
+    width: 1px;
+}
+ 
+svg text {
+    font: 8px Verdana;
+}
